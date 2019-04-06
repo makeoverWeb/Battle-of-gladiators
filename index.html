@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Battle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--
+    Итак, начинаем битву гладиаторов! Суть в следующем: Вы указываете в соответствующих полях начальную силу Легендаруса
+    и параметры других гладиаторов. Неуказанные параметры считать равными нулю.
+    Легендарус начинает битву с первым гладиатором. Битва происходит путем сравнения силы гладиатора и Легендаруса.
+    В случае победы (сила Легендаруса должна быть строго больше силы гладиатора) Легендарус забирает оружие
+    поверженного гладиатора, и прибавляет его к своей силе.
+    После этого Легендарус приступает к схватке со вторым гладиатором, потом, в случае выигрыша, со следующим, и т.д.
+
+    По кнопке "В бой" надо определить, победит ли Легедарус в битве или потерпит поражение. Если победит, то какова
+    будет его накопленная сила?
+
+    Можно как угодно редактировать этот HTML-шаблон для своего удобства и внешнего вида.
+-->
+<div class="section">
+    <div class="section__wrap">
+        <h1>Бои гладиаторов</h1>
+        <label for="spartakus-power">Легендарус, начальная сила:</label>
+        <input type="text" id="spartakus-power" value="10" placeholder="0">
+        <h2>Гладиаторы:</h2>
+        <p class="gladiator">1)
+            <label>Сложность:</label>
+            <input name="power1" type="text" value="1" placeholder="0">
+            <label>Оружие:</label>
+            <input name="power2" type="text" value="2" placeholder="0">
+        </p>
+        <p class="gladiator">2)
+            <label>Сложность:</label>
+            <input name="power3" type="text" value="2" placeholder="0">
+            <label>Оружие:</label>
+            <input name="power4" type="text" value="4" placeholder="0">
+        </p>
+        <p class="gladiator">3)
+            <label>Сложность:</label>
+            <input name="power5" type="text" value="3" placeholder="0">
+            <label>Оружие:</label>
+            <input name="power6" type="text" value="6" placeholder="0">
+        </p>
+        <p class="gladiator">4)
+            <label>Сложность:</label>
+            <input name="power7" type="text" value="4" placeholder="0">
+            <label>Оружие:</label>
+            <input name="power8" type="text" value="8" placeholder="0">
+        </p>
+        <p class="gladiator">5)
+            <label>Сложность:</label>
+            <input name="power9" type="text" value="5" placeholder="0">
+            <label>Оружие:</label>
+            <input name="power10" type="text" value="10" placeholder="0">
+        </p>
+        <p class="gladiator">6)
+            <label>Сложность:</label>
+            <input name="power11" type="text" value="6" placeholder="0">
+            <label>Оружие:</label>
+            <input name="power12" type="text" value="12" placeholder="0">
+        </p>
+        <p class="gladiator">7)
+            <label>Сложность:</label>
+            <input name="power13" type="text" value="7" placeholder="0">
+            <label>Оружие:</label>
+            <input name="power14" type="text" value="14" placeholder="0">
+        </p>
+        <p class="gladiator">8)
+            <label>Сложность:</label>
+            <input name="power15" type="text" value="8" placeholder="0">
+            <label>Оружие:</label>
+            <input name="power16" type="text" value="16" placeholder="0">
+        </p>
+        <p class="gladiator">9)
+            <label>Сложность:</label>
+            <input name="power17" type="text" value="9" placeholder="0">
+            <label>Оружие:</label>
+            <input name="power18" type="text"value="18" placeholder="0">
+        </p>
+        <p class="gladiator">10)
+            <label>Сложность:</label>
+            <input name="power19" type="text" value="10" placeholder="0">
+            <label>Оружие:</label>
+            <input name="power20" type="text" value="20" placeholder="0">
+        </p>
+        <button id="start">В бой!</button>
+        <p id="result"></p>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+</body>
+</html>
